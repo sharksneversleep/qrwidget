@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QR Code</title>
+    </head>
+    <body>
+
+
+        <div id="qrWidget"></div>
+
+        <!-- jquery -->
+        <script src="http://www.sharksneversleep.co.uk/js/vendor/jquery-1.9.0.min.js"></script>
+
+        <!-- WIDGET SCRIPT -->
+        <script src="http://www.sharksneversleep.co.uk/js/qrwidget/qrwidget.js" id="myjs"></script>
+
+        <!-- INITIALISE -->
+        <script>
+        $("#qrWidget").qrwidget({
+            iconWidth: 30,
+            vpos : "bottom",
+            hpos : "middle",
+            shape : "circle"
+        });
+        </script>
+
+    </body>
+</html>
