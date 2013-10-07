@@ -11,7 +11,7 @@
             shape : "square"
         }, options );
 
-        var arrowOuter = "position:absolute; width: 0; height: 0; border-left: 22px solid transparent; border-right: 22px solid transparent;";
+        var arrowOuter = "position:absolute; width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent;";
         var arrowInner = "position:absolute; width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent;";
         var widget     = "position:absolute; z-index: 5000; display:none; border:1px solid #CCC; background:#FFF; text-align:center; text-transform:uppercase; letter-spacing:3px; font-size:11px; color:#000;";
 
@@ -30,19 +30,19 @@
         }
 
         if(settings.hpos=="middle"){
-            arrowOuter += "left:59px;";
+            arrowOuter += "left:60px;";
             arrowInner += "left:60px;";
             widget += "left:" + (settings.iconWidth/2 - 80) + "px";
         }else if(settings.hpos=="left"){
             arrowOuter += "left:145px; border-right: 0px solid transparent;";
-            arrowInner += "left:146px;  border-right: 0px solid transparent;";
+            arrowInner += "left:145px;  border-right: 0px solid transparent;";
             widget += "left:" + (-167 + (settings.iconWidth/2)) + "px";
         }else if(settings.hpos=="right"){
             arrowOuter += "left:0px; border-left: 0px solid transparent;";
-            arrowInner += "left:1px; border-left: 0px solid transparent;";
+            arrowInner += "left:0px; border-left: 0px solid transparent;";
             widget += "left:" + (0 + (settings.iconWidth/2)) + "px";
         }else{
-            arrowOuter += "left:59px;";
+            arrowOuter += "left:60px;";
             arrowInner += "left:60px;";
             widget += "left:" + (settings.iconWidth/2 - 80) + "px";
         }
@@ -64,12 +64,6 @@
             $("#qrWidgetDisplay").fadeToggle(200);
         });
 
-        /*
-        return this.css({
-            color: settings.color,
-            backgroundColor: settings.backgroundColor
-        });
-*/
 
     };
 
